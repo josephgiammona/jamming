@@ -13,7 +13,7 @@ class App extends React.Component{
       <SearchBar />
       <div className="App-playlist">
         <SearchResults />
-        {/* <Playlist /> */} 
+        <Playlist /> 
       </div>
     </div>
   </div>
