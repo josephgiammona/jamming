@@ -28,7 +28,7 @@ class App extends React.Component{
     if (tracks.find(savedTrack => savedTrack.id === track.id)) {
       return;
     }
-    
+
     tracks.push(track);
     this.setState({ playlistTracks: tracks });
   }
@@ -74,7 +74,8 @@ class App extends React.Component{
                           onAdd ={this.addTrack}/>
           <Playlist playlistName={this.state.playlistName}
                     playlistTracks={this.state.playlistTracks}
-                    onRemove={this.removeTrack}/> 
+                    onRemove={this.removeTrack}
+                    onAdd ={this.addTrack}/> 
         </div>
       </div>
     </div>
